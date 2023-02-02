@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --white: #fafafb;
+    --purple: #9a67ea;
+    --blue-light: #04d4ce;
+    --blue-dark: #2a73c2;
+    --green: #2c7b90;
+}
+
+body {
+    background: linear-gradient(to bottom,var(--purple),var(--blue-light));
+    height: 100vh;
+    font-family: 'fira sans',sans-serif;
+}
+
+.container {
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/*perfil*/
+
+.perfil h1{
+    color:var(--white);
+}
+
+.perfil span {
+    color:var(--white);
+    letter-spacing:1px;
+}
+
+#fecha {
+    color:var(--white);
+    padding: 50px 0 5px 0;
+}
+
+/*agregar tarea*/
+
+.agregarTarea {
+    background-color: var(--white);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+    margin: 40px 0;
+}
+
+.agregarTarea input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white)
+    ;
+}
+
+.agregarTarea i {
+    font-size: 50px;
+    color: var(--purple);
+}
+
+.agregarTarea i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.agregarTarea input::placeholder {
+    font-size: 1.1rem;
+    color: var(--purple);
+}
+
+/*Seccion Tarea*/
+
+.seccionTarea h3 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.seccionTarea li {
+    display: flex;
+    background: linear-gradient(to bottom,var(--blue-dark), var(--green));
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    color: var(--white);
+}
+
+.seccionTarea i {
+    font-size: 25px;
+}
+
+.seccionTarea > ul p {
+    font-size: 1.2rem;
+}
+
+.seccionTarea i:hover {
+    color: var(--blue-light);
+    cursor: pointer;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: var(--blue-light);
+}
